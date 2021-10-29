@@ -2,8 +2,8 @@ from sys import setrecursionlimit
 setrecursionlimit(10000) # 보통 재귀 함수 때 (함수 안에 그 함수가 다시 있는 경우) 써주기. 미리 안 써주도라도 recursion 에러 나면 써주면 됨
 n = int(input())
 
-grid = []
-cnt = 0  # 개수 
+grid = [] # 주어지는 2차원 배열 공간을 grid로
+cnt = 0  # (생기는 안전한 영역의) 개수 
 visited = [[False for i in range(n)] for i in range(n)]  # 방문 여부
 for _ in range(n):
     grid.append(list(map(int, input().split())))  # grid input (2차원 배열)
@@ -12,7 +12,7 @@ for _ in range(n):
 
 def is_valid(x,y):  # grid 밖으로 넘어가는지 확인!
     if x >= 0 and x < n and y < n and y >= 0:
-        return True
+        return True # 함수의 결과값으로 True 값을 넣겠다는 것ㄴ
     return False
 
 def dfs(x,y):
