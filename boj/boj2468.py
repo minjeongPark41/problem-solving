@@ -16,7 +16,7 @@ def is_valid(x,y):  # grid 밖으로 넘어가는지 확인!
     return False
 
 def dfs(x,y):
-    if not is_valid(x,y):
+    if not is_valid(x,y): #위에서 is_valid의 결과값으로 True 나 False가 들어가겠지~
         return False
     if visited[x][y] == False and grid[x][y] != 0: # 전에 방문하지 않았고! + 안 잠기고 살아남았는지 확인 
         visited[x][y] = True
