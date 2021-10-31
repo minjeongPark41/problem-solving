@@ -19,7 +19,7 @@ def dfs(x,y):
     if not is_valid(x,y): #위에서 is_valid의 결과값으로 True 나 False가 들어가겠지~
         return False
     if visited[x][y] == False and grid[x][y] != 0: # 전에 방문하지 않았고! + 안 잠기고 살아남았는지 확인 
-        visited[x][y] = True
+        visited[x][y] = True # 이제 방문 했으면 true로 바꿔주는거지 ~
         dfs(x+1,y)
         dfs(x-1,y)
         dfs(x,y+1)
