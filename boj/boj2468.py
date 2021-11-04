@@ -29,7 +29,7 @@ def dfs(x,y):
 
 
 def rain(depth):
-    global visited
+    global visited #global은 전역변수화 해주는 것 
     visited = [[False for i in range(n)] for i in range(n)]  # 초기화!
     for x in range(n):
         for y in range(n):
