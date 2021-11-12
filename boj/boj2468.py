@@ -4,7 +4,7 @@ n = int(input())
 
 grid = [] # 주어지는 2차원 배열 공간을 grid로
 cnt = 0  # (생기는 안전한 영역의) 개수 
-visited = [[False for i in range(n)] for i in range(n)]  # 방문 여부
+visited = [[False for i in range(n)] for i in range(n)]  # 방문 여부. 우선 처음에 다 False로 깔아줌
 for _ in range(n):
     grid.append(list(map(int, input().split())))  # grid input (2차원 배열). 테스트 시, 한 줄 씩 넣어주는 것
 
