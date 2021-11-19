@@ -42,7 +42,7 @@ depth = min_depth
 answers = [1]  # [depth 0일 때 영역 개수, depth 2일 때 영역 개수, depth 3일 때 영역 개수, ... ,max depth일 때 영역 개수]
  
 while (depth <= max_depth):
-    rain(depth) 
+    rain(depth) #함수 부르는 것
     cnt = 0  # 영역 개수 세는 변수
     for x in range(n):
         for y in range(n):
