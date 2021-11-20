@@ -12,7 +12,7 @@ for _ in range(n): # n번만큼 아래 코드를 실행해주겠다는 것
 
 def is_valid(x,y):  # grid 밖으로 넘어가는지 확인!
     if x >= 0 and x < n and y < n and y >= 0:
-        return True # 함수의 결과값으로 True 값을 넣겠다는 것ㄴ
+        return True # 함수의 결과값으로 True 값을 넣겠다는 것
     return False
 
 def dfs(x,y):
