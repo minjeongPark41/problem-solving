@@ -14,7 +14,7 @@ for i in range(1, n+1):
         result.append('-')
     else:
         print('No')
-        exit(0)
+        exit(0) #종료
         
 print('\n'.join(result))
     
