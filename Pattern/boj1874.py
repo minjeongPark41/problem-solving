@@ -8,7 +8,7 @@ for i in range(1, n+1):
     while data <= number:
         stack.append(data)
         data +=1
-        result.append('+')
+        result.append('+') # 문제에서 출력해줘야 하는 답의 형식 
     if stack[-1] == number:
         stack.pop(data)
         result.append('-')
