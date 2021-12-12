@@ -19,7 +19,7 @@ for data in length:
     top[data] += 1 #길이를 인덱스 삼아, +=1 로 세워주는거
   else: #종유석 
     count += 1
-    bottom[h-data+1] += 1
+    bottom[h-data+1] += 1 # h-data까지만 하면 걸리는 부분이 없으니 +1
 
 for i in range(h - 1, 0, -1):
   top[i] += top[i + 1]
