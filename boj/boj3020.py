@@ -16,7 +16,7 @@ count = 0
 for data in length:
   if count % 2 == 0: #0, 2, 4,... 번째. 즉, 석순
     count += 1
-    top[data] += 1 #길이를 인덱스 삼아, +=1 로 세워주는거
+    top[data] += 1 #길이를 인덱스 삼아, 개수를 세어준다. 예를 들어서 길이가 1인게 2개가 있으면 -> top[]의 index 1 자리에는 2가 자리하겠지.
   else: #종유석 
     count += 1
     bottom[h-data+1] += 1 # h-data까지만 하면 걸리는 부분이 없으니 +1
