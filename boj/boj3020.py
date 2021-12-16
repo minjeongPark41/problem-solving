@@ -32,4 +32,4 @@ for i in range(1, h + 1):
   answer[i] = top[i] + bottom[i]
 
 answer = answer[1:] #슬라이싱. 시작 index부터 끝까지
-print(min(answer), answer.count(min(answer)))
+print(min(answer), answer.count(min(answer))) # 변수.count(찾는 요소) -> 해당 값의 개수를 숫자로 반환
