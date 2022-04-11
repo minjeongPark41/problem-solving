@@ -39,14 +39,23 @@
 
 
 # 3번째
-
-class Solution(object):
-    def isPalindrome(self, s):
-        strs = []
-        for char in s:
-            if char.isalnum():
-                strs.append(char.lower())
-        while len(strs) > 1:
-            if(strs.pop(0) != strs.pop()):
-                return False
-        return True
+def isPalindrome(self, s):
+    strs = []
+    for char in s:
+        if char.isalnum():
+            strs.append(char.lower())
+    while len(strs) > 1:
+        if(strs.pop(0) != strs.pop()):
+            return False
+    return True
+    
+    
+        
+"""_
+주의사항
+- 함수 안에서만 return 사용 가능
+- isalnum()
+- lower()
+- pop() 
+"""
+    
